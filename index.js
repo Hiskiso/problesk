@@ -39,7 +39,6 @@ let interval = setInterval(async()=>{
     }, (modes[mode][0]*2)+(modes[mode][1]*2))   
 
     document.body.addEventListener("click", ()=>{
-        document.documentElement.requestFullscreen()
         clearInterval(interval)
 
         mode += 1
