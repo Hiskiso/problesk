@@ -38,7 +38,7 @@ let interval = setInterval(async()=>{
     blue.style.background = "blue"
     }, (modes[mode][0]*2)+(modes[mode][1]*2))   
 
-    document.body.addEventListener("click", ()=>{
+    red.addEventListener("click", ()=>{
         clearInterval(interval)
 
         mode += 1
