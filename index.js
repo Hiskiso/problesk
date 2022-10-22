@@ -44,7 +44,7 @@ blueInt = setInterval(()=>{
     blue.style.background = "blue"
 },400)
 await delay(400)
-
+clearInterval(blueInt)
 }, 800)
 
 let interval = setInterval(async()=>{
