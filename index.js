@@ -31,21 +31,21 @@ blue.style.background = ""
 red.style.background = "red"
 let redInt = setInterval(async()=>{
     red.style.background = ""
-    await delay(10)
+    await delay(100)
     red.style.background = "red"
-},400)
-await delay(400)
+},1000)
+await delay(1000)
 clearInterval(redInt)
 blue.style.background = "blue"
 red.style.background = ""
 let blueInt = setInterval(async()=>{
     blue.style.background = ""
-    await delay(10)
+    await delay(100)
     blue.style.background = "blue"
-},400)
-await delay(400)
+},1000)
+await delay(1000)
 clearInterval(blueInt)
-}, 800)
+}, 2000)
 
     red.addEventListener("click", ()=>{
         clearInterval(interval)
