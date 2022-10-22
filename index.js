@@ -47,17 +47,6 @@ await delay(400)
 clearInterval(blueInt)
 }, 800)
 
-let interval = setInterval(async()=>{
-    await delay(modes[mode][0])
-    red.style.background = ""
-    await delay(modes[mode][0])
-    red.style.background = "red"
-    await delay(modes[mode][1])
-    blue.style.background = ""
-    await delay(modes[mode][1])
-    blue.style.background = "blue"
-    }, (modes[mode][0]*2)+(modes[mode][1]*2))   
-clearInterval(interval)
     red.addEventListener("click", ()=>{
         clearInterval(interval)
 
