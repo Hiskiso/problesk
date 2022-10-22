@@ -31,7 +31,7 @@ blue.style.background = ""
 red.style.background = "red"
 let redInt = setInterval(async()=>{
     red.style.background = ""
-    await delay(10)
+    await delay(50)
     red.style.background = "red"
 },400)
 await delay(400)
@@ -40,7 +40,7 @@ blue.style.background = "blue"
 red.style.background = ""
 blueInt = setInterval(()=>{
     blue.style.background = ""
-    await delay(10)
+    await delay(50)
     blue.style.background = "blue"
 },400)
 await delay(400)
