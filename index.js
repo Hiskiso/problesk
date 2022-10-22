@@ -38,7 +38,7 @@ await delay(400)
 clearInterval(redInt)
 blue.style.background = "blue"
 red.style.background = ""
-blueInt = setInterval(async()=>{
+let blueInt = setInterval(async()=>{
     blue.style.background = ""
     await delay(10)
     blue.style.background = "blue"
