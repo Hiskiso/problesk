@@ -26,6 +26,26 @@ blue.style.height = isMobile ? "100vh" : "50vh"
 blue.style.width = isMobile ? "100vw" : "100vw"
 blue.style.background = "blue"
 
+let interval2 = setInterval(async()=>{
+blue.style.background = ""
+red.style.background = "red"
+let redInt = setInterval(async()=>{
+    red.style.background = ""
+    await delay(100)
+    red.style.background = "red"
+},400)
+await delay(400)
+clearInterval(redInt)
+blue.style.background = "blue"
+red.style.background = ""
+blueInt = setInterval(()=>{
+    blue.style.background = ""
+    await delay(100)
+    blue.style.background = "blue"
+},400)
+await delay(400)
+
+}, 800)
 
 let interval = setInterval(async()=>{
     await delay(modes[mode][0])
@@ -37,7 +57,7 @@ let interval = setInterval(async()=>{
     await delay(modes[mode][1])
     blue.style.background = "blue"
     }, (modes[mode][0]*2)+(modes[mode][1]*2))   
-
+clearInterval(interval)
     red.addEventListener("click", ()=>{
         clearInterval(interval)
 
@@ -47,6 +67,7 @@ let interval = setInterval(async()=>{
         }
         console.log(modes[mode]) 
         interval = setInterval(async()=>{
+        
             await delay(modes[mode][0])
             red.style.background = ""
             await delay(modes[mode][0])
