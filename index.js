@@ -6,6 +6,22 @@ const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 document.body.appendChild(red)
 document.body.appendChild(blue)
 
+var audio = new Audio();
+audio.preload = 'auto';
+audio.src = './music.mp3';
+
+
+red.addEventListener('mousedown', playSound)
+red.addEventListener("mouseup", stopSound)
+
+
+function playSound(){
+    audio.play();
+}
+
+function stopSound() {
+    audio.pause();
+}
 
 document.body.style.margin = 0
 if (isMobile) {
