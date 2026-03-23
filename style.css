@@ -14,6 +14,15 @@ body{
     height: 50vh;
 }
 
+#red.active {
+    background: red;
+}
+
+#blue.active {
+    background: blue;
+}
+
+
 @media (orientation: landscape) {
     body{
         display: flex;
