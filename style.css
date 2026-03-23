@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+    background: black;
+}
+
+
+#red {
+    width: 100vw;
+    height: 50vh;
+}
+
+#blue {
+    width: 100vw;
+    height: 50vh;
+}
+
+@media (orientation: landscape) {
+    body{
+        display: flex;
+        flex-direction: row;
+    }
+
+    #red {
+        width: 50vw;
+        height: 100vh;
+    }
+
+    #blue {
+        width: 50vw;
+        height: 100vh;
+    }
+
+}
